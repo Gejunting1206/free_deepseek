@@ -65,7 +65,7 @@ def mock_generate_response(messages: List[ChatMessage], model) -> str:
             time.sleep(1)
 
     chrome_options = webdriver.ChromeOptions()
-    #chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--headless')
     driver = webdriver.Chrome(options=chrome_options)
     driver.get(f"https://chat.deepseek.com")
 
